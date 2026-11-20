@@ -1,0 +1,173 @@
+:root {
+  --cursor-normal: url("https://static.wikitide.net/utgwiki/4/4c/Cursor.png") 2 1, auto;
+  --cursor-pointer: url("https://static.wikitide.net/utgwiki/a/ab/Pointer.png") 3 1, pointer;
+
+  --primary: 124 77 255;
+  --primary-hex: #7c4dff;
+  --primary-bright: #6436eb;
+  --primary-press: #5b2ee0;
+  --primary-ink: #ffffff;
+  --primary-tint: rgba(124, 77, 255, 0.12);
+  --primary-tint-strong: rgba(124, 77, 255, 0.22);
+  --primary-border: rgba(124, 77, 255, 0.38);
+
+  --canvas: #f2efff;
+  --panel: rgba(255, 255, 255, 0.78);
+  --panel-solid: #ffffff;
+  --bg-a: #ffffff;
+  --bg-b: #f6f3ff;
+  --bg-c: #ece7ff;
+  --bg-d: #dfd8ff;
+  --bg-e: #d0c6ff;
+
+  --ink-outline: #261f47;
+  --text-focus: #231d42;
+  --text-bright: #181330;
+  --text-main: #312a54;
+  --text-muted: #5f5985;
+  --text-dim: #7c76a3;
+  --text-dark: #9e98bf;
+
+  --accent-blue: #4f6dff;
+  --accent-blue-bg: rgba(79, 109, 255, 0.12);
+  --accent-blue-bd: rgba(79, 109, 255, 0.34);
+
+  --accent-green: #169c52;
+  --accent-green-bg: rgba(22, 156, 82, 0.12);
+  --accent-green-bd: rgba(22, 156, 82, 0.34);
+
+  --accent-amber: #d47a00;
+  --accent-amber-bg: rgba(245, 166, 35, 0.14);
+  --accent-amber-bd: rgba(212, 122, 0, 0.34);
+
+  --accent-violet: #7c4dff;
+  --accent-violet-bg: rgba(124, 77, 255, 0.12);
+  --accent-violet-bd: rgba(124, 77, 255, 0.34);
+
+  --accent-pink: #e62e78;
+  --accent-pink-bg: rgba(230, 46, 120, 0.12);
+  --accent-pink-bd: rgba(230, 46, 120, 0.34);
+
+  --accent-cyan: #0088cc;
+  --accent-cyan-bg: rgba(0, 136, 204, 0.12);
+  --accent-cyan-bd: rgba(0, 136, 204, 0.34);
+
+  --danger: #e8385c;
+  --danger-soft: #d4264a;
+  --danger-bg: rgba(232, 56, 92, 0.11);
+  --danger-bd: rgba(232, 56, 92, 0.34);
+  --warn: #c77200;
+  --success: #169c52;
+  --violet: #7c4dff;
+
+  --line: rgba(38, 31, 71, 0.1);
+  --line-strong: rgba(38, 31, 71, 0.18);
+  --border: rgba(38, 31, 71, 0.12);
+  --border-soft: rgba(38, 31, 71, 0.08);
+  --border-strong: rgba(38, 31, 71, 0.2);
+  --sticker-shadow: rgba(38, 31, 71, 0.16);
+  --stripe-color: rgba(255, 255, 255, 0.24);
+
+  --shadow-sm: 0 2px 8px rgba(38, 31, 71, 0.06);
+  --shadow-md: 0 12px 32px rgba(38, 31, 71, 0.09);
+  --shadow-lg: 0 20px 56px rgba(38, 31, 71, 0.18);
+
+  --glass-bg: rgba(255, 255, 255, 0.72);
+  --glass-blur: blur(12px) saturate(1.2);
+
+  --radius-xs: 6px;
+  --radius-sm: 9px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 20px;
+  --radius-pill: 999px;
+  --radius-round: 50%;
+
+  --duration-fast: 140ms;
+  --duration-normal: 220ms;
+  --ease-out: cubic-bezier(0.2, 0.8, 0.2, 1);
+
+  --font-display: "Google Sans Flex", system-ui, -apple-system, sans-serif;
+  --font-sans: "Google Sans Flex", system-ui, -apple-system, sans-serif;
+  --font-mono: "Cascadia Code", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+
+  font-size: 16px;
+  color-scheme: light;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root[data-theme="night"] {
+  --primary-hex: #a584ff;
+  --primary-bright: #c1a8ff;
+  --primary-press: #8e66ff;
+  --primary-ink: #130f29;
+  --primary-tint: rgba(165, 132, 255, 0.16);
+  --primary-tint-strong: rgba(165, 132, 255, 0.26);
+  --primary-border: rgba(185, 158, 255, 0.42);
+
+  --canvas: #131026;
+  --panel: rgba(29, 24, 56, 0.74);
+  --panel-solid: #1d1838;
+  --bg-a: #1d1838;
+  --bg-b: #241e45;
+  --bg-c: #2f2759;
+  --bg-d: #3c3270;
+  --bg-e: #4a3f8a;
+
+  --ink-outline: #0d0a1c;
+  --text-focus: #f3f0ff;
+  --text-bright: #ffffff;
+  --text-main: #ded8ff;
+  --text-muted: #a69fd4;
+  --text-dim: #827bb0;
+  --text-dark: #615b8c;
+
+  --accent-blue: #8ca3ff;
+  --accent-blue-bg: rgba(117, 142, 255, 0.16);
+  --accent-blue-bd: rgba(140, 163, 255, 0.36);
+
+  --accent-green: #4ade80;
+  --accent-green-bg: rgba(74, 222, 128, 0.14);
+  --accent-green-bd: rgba(74, 222, 128, 0.34);
+
+  --accent-amber: #f6c85f;
+  --accent-amber-bg: rgba(246, 200, 95, 0.14);
+  --accent-amber-bd: rgba(246, 200, 95, 0.36);
+
+  --accent-violet: #b694ff;
+  --accent-violet-bg: rgba(182, 148, 255, 0.16);
+  --accent-violet-bd: rgba(182, 148, 255, 0.36);
+
+  --accent-pink: #ff6ba6;
+  --accent-pink-bg: rgba(255, 107, 166, 0.16);
+  --accent-pink-bd: rgba(255, 107, 166, 0.38);
+
+  --accent-cyan: #56ccf2;
+  --accent-cyan-bg: rgba(86, 204, 242, 0.14);
+  --accent-cyan-bd: rgba(86, 204, 242, 0.34);
+
+  --danger: #ff6b88;
+  --danger-soft: #ff8aa1;
+  --danger-bg: rgba(255, 107, 136, 0.14);
+  --danger-bd: rgba(255, 107, 136, 0.36);
+  --warn: #f6c85f;
+  --success: #4ade80;
+  --violet: #b694ff;
+
+  --line: rgba(255, 255, 255, 0.08);
+  --line-strong: rgba(255, 255, 255, 0.16);
+  --border: rgba(255, 255, 255, 0.1);
+  --border-soft: rgba(255, 255, 255, 0.06);
+  --border-strong: rgba(255, 255, 255, 0.18);
+  --sticker-shadow: rgba(6, 5, 18, 0.55);
+  --stripe-color: rgba(255, 255, 255, 0.16);
+
+  --shadow-sm: 0 2px 10px rgba(0, 0, 0, 0.25);
+  --shadow-md: 0 14px 36px rgba(0, 0, 0, 0.38);
+  --shadow-lg: 0 22px 60px rgba(0, 0, 0, 0.55);
+
+  --glass-bg: rgba(24, 19, 46, 0.72);
+  color-scheme: dark;
+}
